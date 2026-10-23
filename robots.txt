@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Team-Bramhand.github.io/sitemap.xml
+Sitemap: https://team-bramhand.github.io//sitemap.xml
