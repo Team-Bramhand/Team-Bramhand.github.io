@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- ===== SEO: basics ===== -->
+    <title>Team Bramhand | IIIT Hyderabad CanSat &amp; Aerospace Student Team</title>
+    <meta name="description"
+        content="Team Bramhand is the student aerospace team of IIIT Hyderabad, building autonomous CanSat systems. Learn about our work and partner with us.">
+    <meta name="keywords"
+        content="Team Bramhand, IIIT Hyderabad, CanSat, aerospace, student team, satellite, paraglider, telemetry, sponsorship">
+    <meta name="author" content="Team Bramhand, IIIT Hyderabad">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://Team-Bramhand.github.io">
+    <meta name="theme-color" content="#150a30">
+    <meta name="color-scheme" content="dark">
+
+    <!-- ===== Icons ===== -->
+    <link rel="icon" type="image/png" href="assets/bramhand.png">
+    <link rel="apple-touch-icon" href="assets/bramhand.png">
+
+    <!-- ===== Link previews (WhatsApp, LinkedIn, Facebook) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Team Bramhand">
+    <meta property="og:title" content="Team Bramhand | IIIT Hyderabad CanSat &amp; Aerospace Student Team">
+    <meta property="og:description"
+        content="The student aerospace team of IIIT Hyderabad, building autonomous CanSat systems. Partner with us.">
+    <meta property="og:url" content="https://Team-Bramhand.github.io">
+    <meta property="og:image" content="https://Team-Bramhand.github.io/assets/bramhand.png">
+    <meta property="og:image:alt" content="Team Bramhand logo">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- ===== Link previews (X / Twitter) ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Team Bramhand | IIIT Hyderabad CanSat &amp; Aerospace Student Team">
+    <meta name="twitter:description"
+        content="The student aerospace team of IIIT Hyderabad, building autonomous CanSat systems.">
+    <meta name="twitter:image" content="https://Team-Bramhand.github.io/assets/bramhand.png">
+
+    <!-- ===== Structured data (helps Google understand the site) ===== -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Team Bramhand",
+      "url": "https://Team-Bramhand.github.io/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Team Bramhand",
+      "alternateName": "Team Bramhand IIIT Hyderabad",
+      "url": "https://Team-Bramhand.github.io/",
+      "logo": "https://Team-Bramhand.github.io/assets/bramhand.png",
+      "description": "Student aerospace team of IIIT Hyderabad that designs, builds and launches autonomous CanSat systems.",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "International Institute of Information Technology, Hyderabad",
+        "alternateName": "IIIT Hyderabad"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/team-Bramhand-iiith"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sponsorship",
+          "name": "Arnav Gupta, Team Lead",
+          "email": "arnav.g@research.iiit.ac.in",
+          "telephone": "+91-91085-50371"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "sponsorship",
+          "name": "Satkar Juneja, Vice Team Lead",
+          "email": "satkar.juneja@research.iiit.ac.in",
+          "telephone": "+91-76733-96153"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+    <style>
+        :root {
+            --bg: #150a30;
+            --bg-soft: #1d0f42;
+            --bg-deep: #0f0623;
+            --purple: #7b3fe4;
+            --lilac: #b79cf5;
+            --white: #ffffff;
+            --text: #e6e0f5;
+            --muted: #a99ccb;
+            --line: rgba(183, 156, 245, 0.2);
+            --pad: clamp(20px, 5vw, 96px);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
+        }
+
+        a {
+            color: var(--lilac);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--white);
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--lilac);
+            outline-offset: 3px;
+        }
+
+        /* Full-width content area: backgrounds span the screen, content scales with it */
+        .wrap {
+            width: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding-inline: var(--pad);
+        }
+
+        .skip {
+            position: absolute;
+            left: -999px;
+            top: 8px;
+            background: var(--purple);
+            color: #fff;
+            padding: 8px 14px;
+            z-index: 100;
+        }
+
+        .skip:focus {
+            left: 8px;
+        }
+
+        /* ===== Header ===== */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(21, 10, 48, 0.92);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-size: 0.95rem;
+        }
+
+        .brand img {
+            width: 34px;
+            height: auto;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: clamp(20px, 3vw, 44px);
+            align-items: center;
+        }
+
+        .nav ul a {
+            color: var(--muted);
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav ul a:hover {
+            color: var(--white);
+        }
+
+        #menu-toggle,
+        .burger {
+            display: none;
+        }
+
+        /* ===== Buttons ===== */
+        .btns {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 26px;
+            min-height: 46px;
+            border: 1px solid var(--purple);
+            color: var(--white);
+            font-size: 0.92rem;
+            font-weight: 600;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--purple);
+            color: var(--white);
+        }
+
+        .btn.solid {
+            background: var(--purple);
+        }
+
+        .btn.solid:hover {
+            background: var(--white);
+            border-color: var(--white);
+            color: var(--bg);
+        }
+
+        /* ===== Hero ===== */
+        .hero {
+            min-height: calc(100vh - 68px);
+            display: flex;
+            align-items: center;
+            padding-block: 60px;
+            background: radial-gradient(ellipse at 15% 20%, rgba(123, 63, 228, 0.3), transparent 55%), var(--bg);
+        }
+
+        .hero .wrap {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            align-items: center;
+            gap: clamp(30px, 6vw, 100px);
+        }
+
+        .eyebrow {
+            color: var(--lilac);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            color: var(--white);
+            font-size: clamp(2.6rem, 7vw, 6rem);
+            line-height: 1.05;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        .lead {
+            color: var(--muted);
+            font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+            max-width: 600px;
+            margin-bottom: 34px;
+        }
+
+        .hero-logo {
+            justify-self: center;
+            width: min(100%, 420px);
+            height: auto;
+            filter: drop-shadow(0 0 60px rgba(123, 63, 228, 0.45));
+        }
+
+        /* ===== Facts band ===== */
+        .facts-band {
+            background: var(--bg-deep);
+            border-block: 1px solid var(--line);
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .fact {
+            padding: 36px 28px;
+            border-right: 1px solid var(--line);
+        }
+
+        .fact:first-child {
+            border-left: 1px solid var(--line);
+        }
+
+        .fact strong {
+            display: block;
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 4px;
+        }
+
+        .fact span {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* ===== Sections ===== */
+        section {
+            padding-block: clamp(60px, 9vw, 130px);
+            scroll-margin-top: 68px;
+        }
+
+        section:nth-of-type(even) {
+            background: var(--bg-soft);
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: minmax(240px, 1fr) 2.2fr;
+            gap: clamp(32px, 6vw, 110px);
+        }
+
+        .split .head {
+            position: sticky;
+            top: 110px;
+            align-self: start;
+        }
+
+        h2 {
+            color: var(--white);
+            font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+            font-weight: 600;
+            line-height: 1.15;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 46px;
+            height: 3px;
+            background: var(--purple);
+            margin-top: 16px;
+        }
+
+        .intro {
+            color: var(--muted);
+            margin-top: 20px;
+            max-width: 520px;
+        }
+
+        .body-text {
+            color: var(--text);
+            max-width: 760px;
+            font-size: 1.1em;
+        }
+
+        /* ===== What we build ===== */
+        .rows {
+            border-top: 1px solid var(--line);
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: minmax(200px, 300px) 1fr;
+            gap: 28px;
+            padding: 28px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .row h3 {
+            color: var(--white);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .row h3 small {
+            display: block;
+            color: var(--purple);
+            font-size: 0.74rem;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+
+        .row p {
+            color: var(--muted);
+        }
+
+        /* ===== Support ===== */
+        .perks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-bottom: 44px;
+        }
+
+        .perk {
+            border-top: 2px solid var(--purple);
+            padding-top: 18px;
+        }
+
+        .perk h3 {
+            color: var(--white);
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .perk p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .people {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .person {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            padding: 28px;
+        }
+
+        .person .role {
+            color: var(--purple);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .person h3 {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin: 4px 0 10px;
+        }
+
+        .person p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            word-break: break-word;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--bg-deep);
+            border-top: 1px solid var(--line);
+            padding-block: 50px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        footer .btns {
+            justify-content: center;
+            margin-bottom: 22px;
+        }
+
+        /* ===== Phone bottom bar (hidden on bigger screens) ===== */
+        .mobile-bar {
+            display: none;
+        }
+
+        /* ===== Tablet ===== */
+        @media (max-width: 1024px) {
+            .hero .wrap {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-logo {
+                order: -1;
+                width: min(60%, 280px);
+            }
+
+            .lead {
+                margin-inline: auto;
+            }
+
+            .hero .btns {
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .split {
+                grid-template-columns: 1fr;
+            }
+
+            .split .head {
+                position: static;
+            }
+
+            .facts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .fact:nth-child(2) {
+                border-right: none;
+            }
+
+            .fact:nth-child(-n+2) {
+                border-bottom: 1px solid var(--line);
+            }
+
+            .fact:first-child {
+                border-left: none;
+            }
+
+            .perks {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== Phone ===== */
+        @media (max-width: 720px) {
+            body {
+                padding-bottom: calc(72px + env(safe-area-inset-bottom));
+            }
+
+            .nav {
+                height: 60px;
+            }
+
+            .burger {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+                width: 44px;
+                height: 44px;
+                cursor: pointer;
+                align-items: center;
+            }
+
+            .burger span {
+                display: block;
+                width: 24px;
+                height: 2px;
+                background: var(--white);
+            }
+
+            .nav ul {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: var(--bg-deep);
+                border-bottom: 1px solid var(--line);
+            }
+
+            .nav ul li {
+                width: 100%;
+            }
+
+            .nav ul a {
+                display: block;
+                padding: 18px var(--pad);
+                font-size: 1rem;
+                border-top: 1px solid var(--line);
+            }
+
+            #menu-toggle:checked~ul {
+                display: flex;
+            }
+
+            section {
+                scroll-margin-top: 60px;
+            }
+
+            .hero {
+                padding-block: 40px;
+            }
+
+            .hero .btns .btn {
+                flex: 1 1 140px;
+            }
+
+            .facts {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .fact {
+                padding: 24px 16px;
+            }
+
+            .row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                padding: 22px 0;
+            }
+
+            .people {
+                grid-template-columns: 1fr;
+            }
+
+            .person .btns .btn {
+                flex: 1;
+            }
+
+            .mobile-bar {
+                display: flex;
+                gap: 10px;
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 60;
+                padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+                background: rgba(15, 6, 35, 0.96);
+                border-top: 1px solid var(--line);
+                backdrop-filter: blur(8px);
+            }
+
+            .mobile-bar .btn {
+                flex: 1;
+                min-height: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <header>
+        <div class="wrap">
+            <nav class="nav" aria-label="Main navigation">
+                <a class="brand" href="#top" aria-label="Team Bramhand home">
+                    <img src="assets/bramhand.png" alt="" width="34" height="36" onerror="this.style.display='none'">
+                    Bramhand
+                </a>
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle menu">
+                <label class="burger" for="menu-toggle"
+                    aria-hidden="true"><span></span><span></span><span></span></label>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#build">What We Build</a></li>
+                    <li><a href="#support">Support Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <div class="hero" id="top">
+            <div class="wrap">
+                <div>
+                    <p class="eyebrow">IIIT Hyderabad</p>
+                    <h1>Team Bramhand</h1>
+                    <p class="lead">A student aerospace team that designs, builds and launches autonomous CanSat systems
+                        on the international stage.</p>
+                    <div class="btns">
+                        <a class="btn solid" href="#support">Support Us</a>
+                        <a class="btn" href="https://www.linkedin.com/company/team-Bramhand-iiith" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                        <a class="btn" href="https://github.com/Team-Bramhand" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+                <!-- LOGO: put assets/bramhand.png in the same folder as this file -->
+                <img class="hero-logo" src="assets/bramhand.png"
+                    alt="Team Bramhand IIIT Hyderabad logo with a rocket launching above clouds" width="400"
+                    height="420" fetchpriority="high" onerror="this.style.display='none'">
+            </div>
+        </div>
+
+        <div class="facts-band">
+            <div class="wrap">
+                <div class="facts">
+                    <div class="fact"><strong>World Champions</strong><span>First Asian team in history to win</span>
+                    </div>
+                    <div class="fact"><strong>Global Podiums</strong><span>Back-to-back top finishes</span></div>
+                    <div class="fact"><strong>7+</strong><span>World final qualifications</span></div>
+                    <div class="fact"><strong>100+</strong><span>International teams competed against</span></div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" aria-labelledby="about-title">
+            <div class="wrap split">
+                <div class="head">
+                    <h2 id="about-title">About Us</h2>
+                </div>
+                <div>
+                    <p class="body-text">We are undergraduate and research students at the International Institute of
+                        Information Technology, Hyderabad. Electronics, software, structures and communications come
+                        together in one team, and we build complete space-mission systems from scratch, from the first
+                        sketch to launch day.</p>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* ===== What We Build (new) ===== */
+            .bd-flow {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 0;
+                margin-bottom: 56px;
+                border: 1px solid var(--line);
+                border-radius: 4px;
+            }
+
+            .bd-step {
+                padding: 22px 20px;
+                border-right: 1px solid var(--line);
+            }
+
+            .bd-step:last-child {
+                border-right: none;
+            }
+
+            .bd-step small {
+                display: block;
+                color: var(--purple);
+                font-size: 0.72rem;
+                letter-spacing: 2px;
+                margin-bottom: 6px;
+            }
+
+            .bd-step h3 {
+                color: var(--white);
+                font-size: 1rem;
+                margin-bottom: 6px;
+            }
+
+            .bd-step p {
+                color: var(--muted);
+                font-size: 0.88rem;
+                line-height: 1.55;
+            }
+
+            .bd-label {
+                color: var(--lilac);
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 0.75rem;
+                margin-bottom: 18px;
+            }
+
+            .bd-list {
+                border-top: 1px solid var(--line);
+            }
+
+            .bd-item {
+                display: grid;
+                grid-template-columns: 56px minmax(180px, 280px) 1fr;
+                gap: 24px;
+                padding: 30px 0;
+                border-bottom: 1px solid var(--line);
+                align-items: start;
+            }
+
+            .bd-num {
+                color: var(--purple);
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+
+            .bd-item h3 {
+                color: var(--white);
+                font-size: 1.15rem;
+                font-weight: 600;
+                line-height: 1.3;
+            }
+
+            .bd-desc {
+                color: var(--muted);
+                margin-bottom: 14px;
+            }
+
+            .bd-points {
+                list-style: none;
+                margin-bottom: 16px;
+            }
+
+            .bd-points li {
+                position: relative;
+                padding-left: 18px;
+                color: var(--text);
+                font-size: 0.95rem;
+                margin-bottom: 4px;
+            }
+
+            .bd-points li::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0.72em;
+                width: 8px;
+                height: 2px;
+                background: var(--purple);
+            }
+
+            .bd-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .bd-tags span {
+                border: 1px solid var(--line);
+                color: var(--lilac);
+                font-size: 0.78rem;
+                padding: 3px 11px;
+                border-radius: 999px;
+            }
+
+            @media (max-width: 1024px) {
+                .bd-flow {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .bd-step {
+                    border-bottom: 1px solid var(--line);
+                }
+
+                .bd-step:nth-child(2n) {
+                    border-right: none;
+                }
+
+                .bd-step:last-child {
+                    grid-column: 1 / -1;
+                    border-bottom: none;
+                    border-right: none;
+                }
+            }
+
+            @media (max-width: 720px) {
+                .bd-flow {
+                    grid-template-columns: 1fr;
+                }
+
+                .bd-step {
+                    border-right: none;
+                }
+
+                .bd-item {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                    padding: 26px 0;
+                }
+
+                .bd-num {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <style>
+            .wb-list {
+                border-top: 1px solid var(--line);
+            }
+
+            .wb-item {
+                display: grid;
+                grid-template-columns: minmax(200px, 300px) 1fr;
+                gap: 28px;
+                padding: 26px 0;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .wb-item h3 {
+                color: var(--white);
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+
+            .wb-item p {
+                color: var(--muted);
+                margin-bottom: 8px;
+            }
+
+            .wb-item .wb-focus {
+                color: var(--lilac);
+                font-size: 0.88rem;
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 720px) {
+                .wb-item {
+                    grid-template-columns: 1fr;
+                    gap: 8px;
+                    padding: 22px 0;
+                }
+            }
+        </style>
+
+        <section id="build" aria-labelledby="build-title">
+            <div class="wrap split">
+                <div class="head">
+                    <h2 id="build-title">What We Build</h2>
+                    <p class="intro">Our work is organised into five subsystems. Members design, manufacture and test
+                        each one in-house, then integrate them into a single vehicle.</p>
+                </div>
+
+                <div class="wb-list">
+                    <div class="wb-item">
+                        <h3>Structure</h3>
+                        <div>
+                            <p>Mechanical design of the vehicle body, internal layout and separation mechanisms,
+                                developed with CAD and 3D printing.</p>
+                            <p class="wb-focus">CAD · 3D printing · Mechanisms · Materials</p>
+                        </div>
+                    </div>
+
+                    <div class="wb-item">
+                        <h3>Electronics</h3>
+                        <div>
+                            <p>Flight computer, sensors, actuators and power systems, along with circuit design, wiring
+                                and board assembly.</p>
+                            <p class="wb-focus">Microcontrollers · Sensors · Actuators · PCB design</p>
+                        </div>
+                    </div>
+
+                    <div class="wb-item">
+                        <h3>Flight Software</h3>
+                        <div>
+                            <p>Embedded code that reads sensor data, determines the flight phase, controls actuators and
+                                logs data for later analysis.</p>
+                            <p class="wb-focus">Embedded programming · State machines · Control systems</p>
+                        </div>
+                    </div>
+
+                    <div class="wb-item">
+                        <h3>Communications &amp; Ground Station</h3>
+                        <div>
+                            <p>Radio link design, antenna construction and a ground station application for viewing
+                                telemetry and tracking position.</p>
+                            <p class="wb-focus">Radio links · Antennas · Telemetry · Data visualisation</p>
+                        </div>
+                    </div>
+
+                    <div class="wb-item">
+                        <h3>Descent &amp; Guidance</h3>
+                        <div>
+                            <p>Design, sewing and testing of parachutes and gliding surfaces, together with algorithms
+                                for steering and navigation.</p>
+                            <p class="wb-focus">Aerodynamics · Fabrication · Navigation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* ===== Past Sponsors ===== */
+            .sponsors-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            .sponsor-card {
+                background: var(--bg);
+                border: 1px solid var(--line);
+                border-radius: 4px;
+                padding: 28px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .sponsor-logo-box {
+                background: var(--white);
+                border-radius: 4px;
+                padding: 20px;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .sponsor-logo-box img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+
+            .sponsor-card h3 {
+                color: var(--white);
+                font-size: 1.25rem;
+                margin-bottom: 8px;
+            }
+
+            .sponsor-card p {
+                color: var(--muted);
+                font-size: 0.95rem;
+                margin-bottom: 24px;
+            }
+
+            .sponsor-card .btn {
+                width: 100%;
+            }
+
+            @media (max-width: 720px) {
+                .sponsors-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+        <section id="sponsors" aria-labelledby="sponsors-title">
+            <div class="wrap split">
+                <div class="head">
+                    <h2 id="sponsors-title">Past Sponsors</h2>
+                    <p class="intro">We are incredibly grateful to the organisations that have backed our mission and
+                        helped us push the boundaries of student aerospace engineering.</p>
+                </div>
+                <div>
+                    <div class="sponsors-grid">
+
+                        <!-- iHub-Data -->
+                        <div class="sponsor-card">
+                            <div class="sponsor-logo-box">
+                                <img src="assets/ihub.png" alt="iHub-Data Logo"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span
+                                    style="display:none; color: var(--bg); font-weight: 700; font-size: 1.2rem;">iHub-Data</span>
+                            </div>
+                            <div>
+                                <h3>iHub-Data</h3>
+                                <p>Technology Innovation Hub at IIIT Hyderabad.</p>
+                                <a class="btn solid" href="https://ihub-data.iiit.ac.in/" target="_blank"
+                                    rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </div>
+
+                        <!-- Take Me To Space -->
+                        <div class="sponsor-card">
+                            <div class="sponsor-logo-box">
+                                <!-- Includes an automatic fallback to text if the logo link is unavailable -->
+                                <img src="assets/tkm2s.png" alt="Take Me To Space Logo"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span style="display:none; color: var(--bg); font-weight: 700; font-size: 1.2rem;">Take
+                                    Me To Space</span>
+                            </div>
+                            <div>
+                                <h3>Take Me To Space</h3>
+                                <p>Building orbital data centres and democratising access to space.</p>
+                                <a class="btn solid" href="https://www.tm2.space/" target="_blank"
+                                    rel="noopener noreferrer">Visit Website</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" aria-labelledby="support-title">
+            <div class="wrap split">
+                <div class="head">
+                    <h2 id="support-title">Support Us</h2>
+                    <p class="intro">Partner with Team Bramhand to represent India on the global stage and connect with
+                        a talented engineering community.</p>
+                </div>
+                <div>
+                    <div class="perks">
+                        <div class="perk">
+                            <h3>University Partnership</h3>
+                            <p>Reach IIIT Hyderabad's engineering community for recruitment, collaboration and on-campus
+                                promotion.</p>
+                        </div>
+                        <div class="perk">
+                            <h3>International Exposure</h3>
+                            <p>Gain global brand visibility at one of the world's most prestigious collegiate space
+                                competitions.</p>
+                        </div>
+                        <div class="perk">
+                            <h3>Team &amp; Mission Branding</h3>
+                            <p>Logo placement on team merchandise, our website and the CanSat itself.</p>
+                        </div>
+                    </div>
+
+                    <div class="people">
+                        <div class="person">
+                            <div class="role">Team Lead</div>
+                            <h3>Arnav Gupta</h3>
+                            <p>arnav.g@research.iiit.ac.in<br>+91 91085 50371</p>
+                            <div class="btns">
+                                <a class="btn solid" href="mailto:arnav.gupta@research.iiit.ac.in">Email</a>
+                                <a class="btn" href="tel:+919108550371">Call</a>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="role">Vice Team Lead</div>
+                            <h3>Satkar Juneja</h3>
+                            <p>satkar.juneja@research.iiit.ac.in<br>+91 76733 96153</p>
+                            <div class="btns">
+                                <a class="btn solid" href="mailto:satkar.juneja@research.iiit.ac.in">Email</a>
+                                <a class="btn" href="tel:+917673396153">Call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="btns">
+                <a class="btn" href="https://www.linkedin.com/company/team-Bramhand-iiith" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a class="btn" href="https://github.com/Team-Bramhand" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+            </div>
+            <p>Team Bramhand | International Institute of Information Technology, Hyderabad</p>
+        </div>
+    </footer>
+
+    <!-- Phone-only bottom bar -->
+    <div class="mobile-bar">
+        <a class="btn solid" href="#support">Support Us</a>
+        <a class="btn" href="mailto:arnav.gupta@students.iiit.ac.in">Email Us</a>
+    </div>
+
+    <script>
+        // Closes the phone menu after tapping a link
+        document.querySelectorAll('.nav ul a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
